@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Dropdown Navbar</title>
+  <link rel="stylesheet" href="stylesheets/dropdown.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MyLogo</div>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Αρχική</a></li>
+      <li class="dropdown">
+        <a href="#">Υπηρεσίες ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Κατασκευή Ιστοσελίδας</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Σχετικά</a></li>
+      <li><a href="#">Επικοινωνία</a></li>
+    </ul>
+  </nav>
+
+  <script src="scripts/navbars.js"></script>
+</body>
+</html>
