@@ -1,0 +1,238 @@
+:root {
+    --bg: #0d0d0d;
+    --text: #f5f5f5;
+    --accent: #00FFB2;
+    --card-bg: #1a1a1a;
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero */
+header.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(0.5);
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    background: var(--accent);
+    color: #000;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #00c799;
+}
+
+/* Navigation */
+nav {
+    background: rgba(13, 13, 13, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+nav a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Haircuts Section */
+.haircut-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.haircut-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.haircut-card:hover {
+    transform: translateY(-5px);
+}
+
+.haircut-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.haircut-card .info {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* About */
+.about {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-style: italic;
+}
+
+/* Services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-box {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Booking */
+form {
+    background: var(--card-bg);
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #f5f5f5;
+    color: #000;
+}
+
+form input[type="submit"] {
+    background: var(--accent);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #00c799;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #111;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+footer a {
+    color: var(--accent);
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

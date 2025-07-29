@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NM Haircuts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Urbanist&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <h1>NM Haircuts</h1>
+            <p>Ξεχώρισε. Μείνε sharp.</p>
+            <a href="#book" class="hero-btn">Κλείσε Ραντεβού</a>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#"><strong>NM</strong></a>
+        <ul>
+            <li><a href="#haircuts">Κουρέματα</a></li>
+            <li><a href="#about">Σχετικά</a></li>
+            <li><a href="#services">Υπηρεσίες</a></li>
+            <li><a href="#book">Ραντεβού</a></li>
+        </ul>
+    </nav>
+
+    <!-- HAIRCUTS -->
+    <section id="haircuts">
+        <h2>Η Δουλειά μας</h2>
+        <div class="haircut-grid">
+            <div class="haircut-card">
+                <img src="kouremanosdi.jpeg" alt="">
+                <div class="info">High Fade Buzz Cut</div>
+            </div>
+            <div class="haircut-card">
+                <img src="kouremaargu.jpeg" alt="">
+                <div class="info">Beard Grooming / Faded Fringe</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>Σχετικά</h2>
+        <p class="about"><i>Για μένα το κούρεμα δεν είναι απλή δουλειά, είναι πάθος. Είναι αυτό για το οποίο ξυπνάω κάθε μέρα και ανυπομονώ να κάνω. Για αυτόν τον λόγο αντιμετωπίζω κάθε πελάτη ξεχωριστά και δημιουργώ το καλύτερο δυνατό αποτέλεσμα.</i><br>- Μιχάλης Ν.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>Υπηρεσίες</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3>Κούρεμα Μηχανής</h3>
+                <p>Τιμή: 5€</p>
+                <p>Διάρκεια: 30min</p>
+            </div>
+            <div class="service-box">
+                <h3>Κούρεμα με Ψαλίδι</h3>
+                <p>Τιμή: 7€</p>
+                <p>Διάρκεια: 45min</p>
+            </div>
+            <div class="service-box">
+                <h3>Λούσιμο / Χτένισμα</h3>
+                <p>Τιμή: 3€</p>
+                <p>Διάρκεια: 15min</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="book">
+        <h2>Κλείσε το ραντεβού σου</h2>
+        <form action="/book">
+            <input type="text" name="name" placeholder="Ονοματεπώνυμο" required />
+            <input type="tel" name="phonenum" placeholder="Αριθμός Τηλεφώνου" required />
+            <select name="service" required>
+                <option value="">Επέλεξε Υπηρεσία</option>
+                <option value="mixanh">Κούρεμα Μηχανής</option>
+                <option value="lousimo">Λούσιμο / Χτένισμα</option>
+                <option value="psalidi">Κούρεμα με Ψαλίδι</option>
+            </select>
+            <input type="submit" value="Κλείσε Ραντεβού" />
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>NM Haircuts® — Athens, Greece</p>
+        <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    </footer>
+
+</body>
+</html>
